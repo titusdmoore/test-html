@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <script lang="Javascript">
+    function Add1() {
+        var inptCtr = document.getElementById("input");
+        var nbr = inptCtr.value;
+        var outputCtr = document.getElementById("output");
+        if(nbr == "") {
+            nbr = 0;
+            outputCtr.value = nbr;
+        }else {
+            outputCtr.value = Number(nbr) + 1;
+        }
+        
+    }
+    </script>
+</head>
+<body>
+    <label>Number:</label>
+    <input id="input" type="text" placeholder="Input">
+    <label>Answer</label>
+    <input id="output" type="text" placeholder="Answer">
+    <button onclick="Add1()">Add</button>
+</body>
+</html>
